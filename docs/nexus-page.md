@@ -91,18 +91,20 @@ README.md
 3. v2.1.0 loaded once in game and confirmed working (**still pending** — the previous build crashed and
    was fixed; the repaired build has not been launched yet).
 4. BrowserOS neo running and signed in to Nexus (**currently not running**).
-5. Then: create the page, attach `PickupMultiplier-2.0.0.zip`, accept the submission guidelines, Publish.
+5. Then: create the page, attach `PickupMultiplier-2.1.0.zip`, accept the submission guidelines, Publish.
 
 ## In-game test script (before upload)
 
 1. Launch, load the save, then open **pause menu → MODS** — the card should read *Pickup Multiplier*
-   2.0.0 with a **Settings** button.
+   2.1.0 with a **Settings** button.
 2. Open Settings: expect the "Pickup multiplier" header, an **Enabled** checkbox, a **Multiplier**
-   slider (1–100, sitting at 100), an **Excluded item ids** box, then the four collapsible item groups
-   (Ammo, Resources, Food, Tools) with a slider per item. Item rows start at the global value; 0 disables
-   that item.
-3. Pick up a stick or a berry — the inventory count should jump by x100 (clamped by the item's cap).
-4. Pick up a keycard, note or blueprint — it must stay exactly 1.
+   slider (1–100, sitting at 100), an **Excluded item ids** box, a **search box** above the item list,
+   then the four collapsible item groups (Ammo, Resources, Food, Tools) with a slider per item. Item rows
+   start at the global value; 0 disables that item.
+3. Type `stick` in the search box — only the Stick row should remain, with the counter showing matches;
+   `392` matches the same row by item id. The box clears when the panel closes.
+4. Pick up a stick or a berry — the inventory count should jump by x100 (clamped by the item's cap).
+5. Pick up a keycard, note or blueprint — it must stay exactly 1.
 5. Fire a weapon — ammo should decrease (infinite ammo is off in FrankyModMenu).
 6. Quit, and the agent reads `UserData/PickupMultiplier.status.txt` to confirm which pickups were multiplied.
 
