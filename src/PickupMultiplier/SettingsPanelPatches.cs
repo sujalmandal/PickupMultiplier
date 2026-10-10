@@ -1,16 +1,6 @@
 using HarmonyLib;
-using SettingsEntry = SUI.SettingsRegistry.SettingsEntry;
 
 namespace PickupMultiplier;
-
-[HarmonyPatch(typeof(SettingsEntry), nameof(SettingsEntry.ToggleCategory))]
-internal static class SettingsCollapsePatch
-{
-    private static void Postfix(string identifier, bool show)
-    {
-        ItemSearchBar.OnCategoryToggled(identifier, show);
-    }
-}
 
 [HarmonyPatch(typeof(SonsGameManager.ModSettingsUi), nameof(SonsGameManager.ModSettingsUi.Open))]
 internal static class SettingsPanelOpenPatch
@@ -22,12 +12,6 @@ internal static class SettingsPanelOpenPatch
             return;
         }
 
-        var settingsEntry = SUI.SettingsRegistry.GetEntry(id);
-        if (settingsEntry == null)
-        {
-            return;
-        }
-
-        ItemSearchBar.OnSettingsPanelOpened(settingsEntry);
+        SettingsPagePolish.Apply(SUI.SettingsRegistry.GetEntry(id));
     }
 }

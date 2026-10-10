@@ -8,7 +8,6 @@ Unique, story and quest items are never multiplied.
 
 - Configurable multiplier: **1 – 100** (default 100, the maximum)
 - **A slider for every regular item**, in collapsible groups — so each item can have its own multiplier
-- **Search box** above the item list: filter rows by name (`stick`), internal name (`i9mmammo`) or item id (`392`)
 - Enable / disable toggle
 - Optional item-id exclusion list
 - Automatically skips unique, story and quest items — keycards, notes, email printouts, blueprint pages, artifacts, weapons, tools, masks
@@ -41,7 +40,6 @@ In game: **pause menu → MODS → Pickup Multiplier → Settings**
 | Enabled | Turns the whole mod on or off |
 | Multiplier | Global slider, 1 – 100 (1 = vanilla behaviour, 100 = maximum) |
 | Excluded item ids | Comma separated item ids that must never be multiplied |
-| Search | Filters the item rows as you type; matches label, internal name or item id, and shows a count of matches. Global rows stay visible, and the box clears when the panel closes |
 | Item sliders | One per regular item, in four collapsible groups: **Ammo**, **Resources**, **Food**, **Tools**. Rows start at the global value and follow it; set one to **0 to disable that item**, or to any value 1 – 100 for its own multiplier |
 
 A per-item value always wins over the global one, and every slider has a Revert button that returns it
@@ -91,13 +89,6 @@ and ammo scale with the multiplier.
   it cannot recurse or double count.
 - Client-side mod, safe to add or remove at any time. Removing it does not affect your save.
 - Multiplayer is untested.
-
-## Troubleshooting
-
-If the settings page ever looks wrong, open it once and read `UserData/PickupMultiplier.debug.txt`. Every
-open regenerates it with the panel geometry, where the search bar placed itself, the group divider labels
-and every item slider's readout — enough to diagnose a layout problem without a screenshot. The file is
-safe to delete, and it is what a bug report should include.
 
 ## Building from source
 

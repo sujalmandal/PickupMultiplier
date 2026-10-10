@@ -3,7 +3,7 @@
   "id": "PickupMultiplier",
   "name": "Pickup Multiplier",
   "author": "sujalmandal",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Multiplies the amount of regular items you pick up, with a slider for every item. Unique, story and quest items are left alone.",
   "gameVersion": "1.0.0",
   "type": "Mod"

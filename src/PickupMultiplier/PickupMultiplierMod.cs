@@ -18,7 +18,7 @@ namespace PickupMultiplier;
 public class PickupMultiplierMod : SonsMod
 {
     private const string ModName = "PickupMultiplier";
-    private const string ModVersion = "2.1.0";
+    private const string ModVersion = "2.1.1";
     private const int DefaultMultiplier = 100;
     private const int MaxMultiplier = 100;
     private const int ActivityTailLength = 20;
@@ -54,7 +54,6 @@ public class PickupMultiplierMod : SonsMod
     private void ApplyPatches()
     {
         TryPatch(typeof(SettingsPanelOpenPatch));
-        TryPatch(typeof(SettingsCollapsePatch));
     }
 
     private void TryPatch(Type patchType)
@@ -91,7 +90,6 @@ public class PickupMultiplierMod : SonsMod
             "Comma separated item ids that are never multiplied", false, false, null);
 
         _settings.RegisterItemEntries(_itemMultipliers, _settings.Multiplier.Value);
-        ItemSearchBar.SetItemMultipliers(_itemMultipliers);
         _settings.ExcludedItemIds.OnValueChanged.Subscribe((_, _) => ReloadExcludedItemIds());
     }
 
@@ -273,7 +271,6 @@ public class PickupMultiplierMod : SonsMod
     {
         ReloadExcludedItemIds();
         SyncItemDefaults(_settings.Multiplier.Value);
-        ItemSearchBar.Reset();
         WriteStatusFile();
         Log($"[{ModName}] settings applied: x{_settings.Multiplier.Value} enabled={_settings.Enabled.Value} excluded={_excludedItemIds.Count}");
     }

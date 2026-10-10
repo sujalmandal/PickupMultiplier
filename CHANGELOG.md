@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.1.1
+
+- **Removed the item search box.** It did not behave reliably on the settings page for the value it added,
+  so the items are simply grouped and collapsible again
+- Kept the two settings-page fixes that are worth having: reused labels that show the game's placeholder
+  text are repaired, and slider readouts are forced to whole numbers
+- Config, multipliers and all pickup behaviour are unchanged from 2.1.0
+
 ## 2.1.0
 
 - A slider for every regular item, grouped into collapsible **Ammo**, **Resources**, **Food** and **Tools** sections
