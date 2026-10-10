@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.1.2
+
+- **Maximum multiplier is now 25** instead of 100, for the global slider and per-item sliders alike
+- Default multiplier is 25, so a fresh install multiplies picks by 25 until you change it
+- Values above 25 already saved in the config clamp to 25 on load; everything else is unchanged
+
 ## 2.1.1
 
 - **Removed the item search box.** It did not behave reliably on the settings page for the value it added,

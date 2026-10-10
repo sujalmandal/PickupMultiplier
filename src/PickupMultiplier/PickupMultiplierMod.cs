@@ -18,9 +18,9 @@ namespace PickupMultiplier;
 public class PickupMultiplierMod : SonsMod
 {
     private const string ModName = "PickupMultiplier";
-    private const string ModVersion = "2.1.1";
-    private const int DefaultMultiplier = 100;
-    private const int MaxMultiplier = 100;
+    private const string ModVersion = "2.1.2";
+    private const int DefaultMultiplier = 25;
+    private const int MaxMultiplier = 25;
     private const int ActivityTailLength = 20;
 
     public const string ModId = ModName;

@@ -1,4 +1,4 @@
-# Nexus Mods page copy — Pickup Multiplier 2.1.1
+# Nexus Mods page copy — Pickup Multiplier 2.1.2
 
 Draft for review. Items marked **[your call]** need your decision before publishing.
 
@@ -51,8 +51,8 @@ Nexus's file submission guidelines and clicking Publish (2026-10-10).
 
 ## Version / file
 
-- Version: `2.1.1`
-- File: `PickupMultiplier-2.1.1.zip`
+- Version: `2.1.2`
+- File: `PickupMultiplier-2.1.2.zip`
 - File category: Main files
 - Archive layout (matches the Nexus/Vortex convention for SOTF RedLoader mods):
 
@@ -65,13 +65,16 @@ README.md
 ## Changelog
 
 ```
+2.1.2
+- Max multiplier is now 25 instead of 100, globally and per item; saved values above 25 clamp down on load
+
 2.1.1
 - Removed the item search box: it did not behave reliably for the value it added
 - Kept the placeholder-label repair and whole-number slider readouts
 
 2.1.0
 - A slider for every regular item, grouped into collapsible Ammo, Resources, Food and Tools sections.
-  Item rows start at the global value and follow it; 0 disables that item; 1 - 100 sets its own multiplier.
+  Item rows start at the global value and follow it; 0 disables that item; 1 - 25 sets its own multiplier.
 - Only items you actually change are written to the config, so the file stays short.
 - Item ids come from the SDK's own item table (346 items), and labels are generated from it.
 
@@ -80,7 +83,7 @@ README.md
 - Covers all regular pickups, not just ammo: resources, food, materials and ammo.
 - Unique, story and quest items are now excluded automatically, using the game's own item data
   (per-instance uniqueness, max amount, and the UniqueItem / Special / StructureBlueprint flags).
-- Added a RedLoader settings panel: enable/disable toggle, 1-100 multiplier slider, and an
+- Added a RedLoader settings panel: enable/disable toggle, 1-25 multiplier slider, and an
   item-id exclusion box. Settings apply instantly.
 - Config is now managed by RedLoader in UserData/PickupMultiplier.cfg.
 
@@ -92,20 +95,20 @@ README.md
 
 1. ~~Permissions, AI disclosure and category chosen~~ — done, see above.
 2. ~~Publish authority~~ — the author authorized the agent to submit.
-3. v2.1.1 loaded once in game and confirmed working (**still pending** — the previous build crashed and
+3. v2.1.2 loaded once in game and confirmed working (**still pending** — the previous build crashed and
    was fixed; the repaired build has not been launched yet).
 4. BrowserOS neo running and signed in to Nexus (**currently not running**).
-5. Then: create the page, attach `PickupMultiplier-2.1.1.zip`, accept the submission guidelines, Publish.
+5. Then: create the page, attach `PickupMultiplier-2.1.2.zip`, accept the submission guidelines, Publish.
 
 ## In-game test script (before upload)
 
 1. Launch, load the save, then open **pause menu → MODS** — the card should read *Pickup Multiplier*
-   2.1.1 with a **Settings** button.
+   2.1.2 with a **Settings** button.
 2. Open Settings: expect the "Pickup multiplier" header, an **Enabled** checkbox, a **Multiplier**
    slider (1–100, sitting at 100), an **Excluded item ids** box, then the four collapsible item groups
    (Ammo, Resources, Food, Tools) with a slider per item. Item rows start at the global value; 0 disables
    that item.
-3. Pick up a stick or a berry — the inventory count should jump by x100 (clamped by the item's cap).
+3. Pick up a stick or a berry — the inventory count should jump by x25 (clamped by the item's cap).
 4. Pick up a keycard, note or blueprint — it must stay exactly 1.
 5. Fire a weapon — ammo should decrease (infinite ammo is off in FrankyModMenu).
 6. Quit, and the agent reads `UserData/PickupMultiplier.status.txt` to confirm which pickups were multiplied.

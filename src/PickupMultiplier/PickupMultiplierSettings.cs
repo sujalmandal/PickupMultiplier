@@ -9,7 +9,7 @@ namespace PickupMultiplier;
 public partial class PickupMultiplierSettings
 {
     public const string FileName = "PickupMultiplier.cfg";
-    public const int MaxItemMultiplier = 100;
+    public const int MaxItemMultiplier = 25;
 
     private static readonly ValueRange<int> ItemMultiplierRange = new(0, MaxItemMultiplier);
 

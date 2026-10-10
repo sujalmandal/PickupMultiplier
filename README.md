@@ -6,7 +6,7 @@ Unique, story and quest items are never multiplied.
 
 ## Features
 
-- Configurable multiplier: **1 – 100** (default 100, the maximum)
+- Configurable multiplier: **1 – 25** (default 25, the maximum)
 - **A slider for every regular item**, in collapsible groups — so each item can have its own multiplier
 - Enable / disable toggle
 - Optional item-id exclusion list
@@ -38,9 +38,9 @@ In game: **pause menu → MODS → Pickup Multiplier → Settings**
 | Setting | What it does |
 | --- | --- |
 | Enabled | Turns the whole mod on or off |
-| Multiplier | Global slider, 1 – 100 (1 = vanilla behaviour, 100 = maximum) |
+| Multiplier | Global slider, 1 – 25 (1 = vanilla behaviour, 25 = maximum) |
 | Excluded item ids | Comma separated item ids that must never be multiplied |
-| Item sliders | One per regular item, in four collapsible groups: **Ammo**, **Resources**, **Food**, **Tools**. Rows start at the global value and follow it; set one to **0 to disable that item**, or to any value 1 – 100 for its own multiplier |
+| Item sliders | One per regular item, in four collapsible groups: **Ammo**, **Resources**, **Food**, **Tools**. Rows start at the global value and follow it; set one to **0 to disable that item**, or to any value 1 – 25 for its own multiplier |
 
 A per-item value always wins over the global one, and every slider has a Revert button that returns it
 to following the global multiplier. The item groups open with a reminder of that: *0 = disabled,
@@ -52,7 +52,7 @@ written there:
 ```toml
 [PickupMultiplier]
 enabled = true
-multiplier = 100
+multiplier = 25
 excludedItemIds = ""
 
 [Ammo]
@@ -83,7 +83,7 @@ and ammo scale with the multiplier.
 
 ## Notes
 
-- Item stack caps still apply. If a resource caps at 20 in your game, a x100 pickup will still
+- Item stack caps still apply. If a resource caps at 20 in your game, a x25 pickup will still
   leave you at 20 unless another mod raises the cap.
 - The mod adds items through the inventory manager, which does not re-raise the pickup event, so
   it cannot recurse or double count.

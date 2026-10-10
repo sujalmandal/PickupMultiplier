@@ -6,7 +6,7 @@
     <Nullable>disable</Nullable>
     <AssemblyName>PickupMultiplier</AssemblyName>
     <RootNamespace>PickupMultiplier</RootNamespace>
-    <Version>2.1.1</Version>
+    <Version>2.1.2</Version>
     <LangVersion>10</LangVersion>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <GameDir Condition="'$(GameDir)' == ''">$(HOME)/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sons Of The Forest</GameDir>
