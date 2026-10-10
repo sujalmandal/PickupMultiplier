@@ -36,11 +36,6 @@ public class PickupMultiplierMod : SonsMod
         ConfigureSettings();
     }
 
-    public PickupMultiplierMod()
-    {
-        HarmonyPatchAll = true;
-    }
-
     protected override void OnInitializeMod()
     {
         _statusPath = ConfigSystem.GetFilePath($"{ModName}.status.txt");
@@ -51,8 +46,33 @@ public class PickupMultiplierMod : SonsMod
 
     protected override void OnSdkInitialized()
     {
+        ApplyPatches();
         SdkEvents.OnItemPickup.Subscribe(OnItemPickup);
         SettingsRegistry.CreateSettings(this, _settings, false, OnSettingsClosed);
+    }
+
+    private void ApplyPatches()
+    {
+        TryPatch(typeof(SettingsPanelOpenPatch));
+        TryPatch(typeof(SettingsCollapsePatch));
+    }
+
+    private void TryPatch(Type patchType)
+    {
+        if (HarmonyInstance == null)
+        {
+            Log($"[{ModName}] no harmony instance, skipping {patchType.Name}");
+            return;
+        }
+
+        try
+        {
+            HarmonyInstance.CreateClassProcessor(patchType).Patch();
+        }
+        catch (Exception error)
+        {
+            Log($"[{ModName}] {patchType.Name} not applied: {error.Message}");
+        }
     }
 
     private void ConfigureSettings()
@@ -71,6 +91,7 @@ public class PickupMultiplierMod : SonsMod
             "Comma separated item ids that are never multiplied", false, false, null);
 
         _settings.RegisterItemEntries(_itemMultipliers, _settings.Multiplier.Value);
+        ItemSearchBar.SetItemMultipliers(_itemMultipliers);
         _settings.ExcludedItemIds.OnValueChanged.Subscribe((_, _) => ReloadExcludedItemIds());
     }
 

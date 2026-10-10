@@ -92,6 +92,13 @@ and ammo scale with the multiplier.
 - Client-side mod, safe to add or remove at any time. Removing it does not affect your save.
 - Multiplayer is untested.
 
+## Troubleshooting
+
+If the settings page ever looks wrong, open it once and read `UserData/PickupMultiplier.debug.txt`. Every
+open regenerates it with the panel geometry, where the search bar placed itself, the group divider labels
+and every item slider's readout — enough to diagnose a layout problem without a screenshot. The file is
+safe to delete, and it is what a bug report should include.
+
 ## Building from source
 
 The build needs the .NET 6 SDK and a local Sons of the Forest install (the game's RedLoader assemblies are

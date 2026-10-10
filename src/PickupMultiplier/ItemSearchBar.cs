@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using RedLoader;
 using SUI;
@@ -17,6 +18,8 @@ public static class ItemSearchBar
     private const string PanelId = "ModSettingsPanel";
     private const string DebugFileName = "PickupMultiplier.debug.txt";
     private const string PlaceholderMarker = "IPSUM";
+    private const string ExpandedGlyph = "\uf0d7";
+    private const string CollapsedGlyph = "\uf0da";
 
     private const float BarHeightRatio = 0.052f;
     private const float MinBarHeight = 40f;
@@ -33,18 +36,35 @@ public static class ItemSearchBar
     private const float FontSizeRatio = 0.015f;
     private const int MinFontSize = 12;
     private const int MaxFontSize = 20;
+    private const float FallbackWidthRatio = 0.35f;
+    private const float MinFallbackWidth = 320f;
+    private const float MaxFallbackWidth = 700f;
 
     private static readonly HashSet<string> ItemCategories = new() { "Ammo", "Resources", "Food", "Tools" };
     private static readonly Dictionary<string, bool> CategoryVisibility = new();
+    private static readonly Dictionary<ConfigEntry, int> ItemIds = new();
 
     private static SettingsEntry _settingsEntry;
     private static SContainerOptions _bar;
     private static STextboxOptions _input;
     private static SLabelOptions _counter;
     private static string _query = string.Empty;
+    private static string _placement = "unplaced";
     private static bool _created;
     private static float? _contentTopInset;
     private static string _debugPath;
+
+    public static void SetItemMultipliers(Dictionary<int, ConfigEntry<int>> itemMultipliers)
+    {
+        ItemIds.Clear();
+        foreach (var pair in itemMultipliers)
+        {
+            if (pair.Value != null)
+            {
+                ItemIds[pair.Value] = pair.Key;
+            }
+        }
+    }
 
     public static void OnSettingsPanelOpened(SettingsEntry settingsEntry)
     {
@@ -102,6 +122,7 @@ public static class ItemSearchBar
 
         _bar = SContainer.Background(new Color(0f, 0f, 0f, 0.35f), EBackground.Round8, Image.Type.Sliced);
         _bar.Add(row);
+        _bar.Active(false);
     }
 
     private static RectTransform FindScrollRoot(SPanelOptions panel)
@@ -131,6 +152,8 @@ public static class ItemSearchBar
         var panelRect = panel.Root.GetComponent<RectTransform>();
         if (panelRect == null)
         {
+            _bar.Active(false);
+            _placement = "waiting for the panel";
             return;
         }
 
@@ -138,6 +161,8 @@ public static class ItemSearchBar
         var panelWidth = panelRect.rect.width;
         if (panelHeight <= 1f || panelWidth <= 1f)
         {
+            _bar.Active(false);
+            _placement = "waiting for the panel rect";
             return;
         }
 
@@ -149,39 +174,54 @@ public static class ItemSearchBar
 
         _counter.PWidth(counterWidth).FontSize(fontSize);
 
-        var left = 0f;
-        var right = 0f;
-        var bandTop = titleHeight + gap;
+        var barRect = _bar.RectTransform;
+        barRect.pivot = new Vector2(0.5f, 1f);
 
-        if (scroll != null)
+        if (scroll == null)
         {
-            if (_contentTopInset == null)
-            {
-                _contentTopInset = scroll.offsetMax.y;
-            }
-
-            left = scroll.offsetMin.x;
-            right = scroll.offsetMax.x;
-            bandTop = Mathf.Max(Mathf.Abs(_contentTopInset.Value), titleHeight + gap);
-            scroll.offsetMax = new Vector2(right, -(bandTop + barHeight + gap));
+            LayoutInBottomCorner(barRect, panelWidth, panelHeight, barHeight, gap);
+            _placement = "bottom corner (no scroll container found)";
+            _bar.Active(true);
+            return;
         }
 
-        var barRect = _bar.RectTransform;
+        if (_contentTopInset == null)
+        {
+            _contentTopInset = scroll.offsetMax.y;
+        }
+
+        var left = scroll.offsetMin.x;
+        var right = scroll.offsetMax.x;
+        var bandTop = Mathf.Max(Mathf.Abs(_contentTopInset.Value), titleHeight + gap);
+        scroll.offsetMax = new Vector2(right, -(bandTop + barHeight + gap));
+
         barRect.anchorMin = new Vector2(0f, 1f);
         barRect.anchorMax = new Vector2(1f, 1f);
-        barRect.pivot = new Vector2(0.5f, 1f);
         barRect.offsetMin = new Vector2(left, -(bandTop + barHeight));
         barRect.offsetMax = new Vector2(right, -bandTop);
+        _placement = $"above the list, insets {left} / {right}";
+        _bar.Active(true);
     }
 
-    // SUI reuses the game's option prefabs, and a reused label can still carry the game's placeholder
-    // text, so every divider and title that shows it gets the text it should have had
+    private static void LayoutInBottomCorner(RectTransform barRect, float panelWidth, float panelHeight, float barHeight, float gap)
+    {
+        var width = Mathf.Clamp(panelWidth * FallbackWidthRatio, MinFallbackWidth, MaxFallbackWidth);
+        var inset = Mathf.Clamp(panelWidth * CounterWidthRatio / 2f, gap, gap * 4f);
+        var bottom = Mathf.Clamp(panelHeight * 0.07f, gap, gap * 6f);
+
+        barRect.pivot = new Vector2(1f, 0f);
+        barRect.anchorMin = new Vector2(1f, 0f);
+        barRect.anchorMax = new Vector2(1f, 0f);
+        barRect.offsetMin = new Vector2(-inset - width, bottom);
+        barRect.offsetMax = new Vector2(-inset, bottom + barHeight);
+    }
+
+    // SUI reuses the game's option prefabs, and a reused label can still carry the game's placeholder text
     private static void RepairPlaceholderText(SPanelOptions panel, RectTransform scroll)
     {
-        var categories = ResolveCategoryOrder();
-
         if (scroll != null)
         {
+            var categories = ResolveCategoryOrder();
             var dividers = new List<Transform>();
             foreach (var candidate in scroll.GetComponentsInChildren<Transform>(true))
             {
@@ -194,13 +234,19 @@ public static class ItemSearchBar
             for (var i = 0; i < dividers.Count; i++)
             {
                 var label = dividers[i].GetComponentInChildren<TextMeshProUGUI>(true);
-                if (label == null || !IsPlaceholder(label.text))
+                if (label == null)
                 {
                     continue;
                 }
 
                 var category = i < categories.Count ? categories[i] : "Items";
-                label.text = $"\uf0d7 {category}";
+                if (Contains(label.text, category.ToLowerInvariant()))
+                {
+                    continue;
+                }
+
+                var glyph = label.text != null && label.text.StartsWith(CollapsedGlyph) ? CollapsedGlyph : ExpandedGlyph;
+                label.text = $"{glyph} {category}";
             }
         }
 
@@ -254,12 +300,7 @@ public static class ItemSearchBar
 
         foreach (var entry in _settingsEntry.ConfigEntries)
         {
-            if (entry == null || entry.ConfigEntry == null)
-            {
-                continue;
-            }
-
-            var slider = _settingsEntry.GetWrappedElementForEntry(entry.ConfigEntry)?.As<SSliderOptions>();
+            var slider = ResolveSlider(entry);
             if (slider == null)
             {
                 continue;
@@ -271,6 +312,16 @@ public static class ItemSearchBar
                 slider.Value(value);
             }
         }
+    }
+
+    private static SSliderOptions ResolveSlider(SettingsConfigEntry entry)
+    {
+        if (entry == null || entry.ConfigEntry == null || _settingsEntry == null)
+        {
+            return null;
+        }
+
+        return _settingsEntry.GetWrappedElementForEntry(entry.ConfigEntry)?.As<SSliderOptions>();
     }
 
     private static void OnQueryChanged(string value)
@@ -333,9 +384,18 @@ public static class ItemSearchBar
             return false;
         }
 
-        return Contains(configEntry.DisplayName, query)
-            || Contains(configEntry.Identifier, query)
-            || Contains(configEntry.Description, query);
+        if (Contains(configEntry.DisplayName, query) || Contains(configEntry.Identifier, query))
+        {
+            return true;
+        }
+
+        if (Contains(entry.CategoryName, query))
+        {
+            return true;
+        }
+
+        return ItemIds.TryGetValue(configEntry, out var itemId)
+            && itemId.ToString(CultureInfo.InvariantCulture).Contains(query);
     }
 
     private static bool Contains(string text, string query)
@@ -350,17 +410,17 @@ public static class ItemSearchBar
             return;
         }
 
-        var lines = new List<string>();
-        var panelRect = panel.Root.GetComponent<RectTransform>();
-        var barRect = _bar.RectTransform;
-
-        lines.Add($"mod          {PickupMultiplierMod.ModId}");
-        lines.Add($"panel rect   {Describe(panelRect)}");
-        lines.Add($"scroll rect  {Describe(scroll)}");
-        lines.Add($"content top  {_contentTopInset}");
-        lines.Add($"bar rect     {Describe(barRect)}");
-        lines.Add("");
-        lines.Add("panel children:");
+        var lines = new List<string>
+        {
+            $"mod          {PickupMultiplierMod.ModId}",
+            $"placement    {_placement}",
+            $"panel rect   {Describe(panel.Root.GetComponent<RectTransform>())}",
+            $"scroll rect  {Describe(scroll)}",
+            $"bar rect     {Describe(_bar.RectTransform)}",
+            $"content top  {_contentTopInset}",
+            "",
+            "panel children:"
+        };
 
         foreach (Transform child in panel.Root.transform)
         {
@@ -384,14 +444,51 @@ public static class ItemSearchBar
             }
 
             lines.Add("");
-            lines.Add("content children:");
+            lines.Add("first content children:");
+            var shown = 0;
             foreach (Transform child in scroll)
             {
+                if (shown++ >= 15)
+                {
+                    break;
+                }
+
                 lines.Add($"  {child.name} {TextOf(child)}");
             }
         }
 
+        lines.Add("");
+        lines.Add("item slider readouts (label | readout):");
+        if (_settingsEntry != null)
+        {
+            foreach (var entry in _settingsEntry.ConfigEntries)
+            {
+                if (entry == null || !ItemCategories.Contains(entry.CategoryName))
+                {
+                    continue;
+                }
+
+                lines.Add($"  {entry.ConfigEntry?.DisplayName} = {TextsOf(ResolveSlider(entry))}");
+            }
+        }
+
         File.WriteAllLines(_debugPath, lines);
+    }
+
+    private static string TextsOf(SSliderOptions slider)
+    {
+        if (slider == null || slider.Root == null)
+        {
+            return "(no slider)";
+        }
+
+        var texts = new List<string>();
+        foreach (var label in slider.Root.GetComponentsInChildren<TextMeshProUGUI>(true))
+        {
+            texts.Add($"\"{label.text}\"");
+        }
+
+        return string.Join(" | ", texts);
     }
 
     private static string Describe(RectTransform rect)
