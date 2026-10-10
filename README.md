@@ -64,7 +64,7 @@ stick = 0
 ```
 
 Here 9mm ammo and crossbow bolts have their own multipliers, and sticks are disabled, while every other
-item follows the global 100.
+item follows the global 25.
 
 `UserData/PickupMultiplier.status.txt` keeps a short log of the last 20 multiplied pickups
 (`itemId name picked N -> granted M`), which is handy for checking what counted as a regular pickup.
