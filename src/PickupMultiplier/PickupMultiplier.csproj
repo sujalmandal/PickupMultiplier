@@ -1,0 +1,51 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <AssemblyName>PickupMultiplier</AssemblyName>
+    <RootNamespace>PickupMultiplier</RootNamespace>
+    <Version>2.1.0</Version>
+    <LangVersion>10</LangVersion>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <GameDir Condition="'$(GameDir)' == ''">$(HOME)/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Sons Of The Forest</GameDir>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="SonsSdk">
+      <HintPath>$(GameDir)/_Redloader/net6/SonsSdk.dll</HintPath>
+    </Reference>
+    <Reference Include="RedLoader">
+      <HintPath>$(GameDir)/_Redloader/net6/RedLoader.dll</HintPath>
+    </Reference>
+    <Reference Include="0Harmony">
+      <HintPath>$(GameDir)/_Redloader/net6/0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppInterop.Runtime">
+      <HintPath>$(GameDir)/_Redloader/net6/Il2CppInterop.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Sons">
+      <HintPath>$(GameDir)/_Redloader/Game/Sons.dll</HintPath>
+    </Reference>
+    <Reference Include="Sons.Item">
+      <HintPath>$(GameDir)/_Redloader/Game/Sons.Item.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2Cppmscorlib">
+      <HintPath>$(GameDir)/_Redloader/Game/Il2Cppmscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>$(GameDir)/_Redloader/Game/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>$(GameDir)/_Redloader/Game/UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>$(GameDir)/_Redloader/Game/UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>$(GameDir)/_Redloader/Game/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,2432 @@
+{
+  "groups": [
+    "Ammo",
+    "Resources",
+    "Food",
+    "Tools"
+  ],
+  "items": [
+    {
+      "id": 78,
+      "name": "Log_Legacy",
+      "label": "Log Legacy",
+      "group": "Resources",
+      "include": true
+    },
+    {
+      "id": 340,
+      "name": "Guitar",
+      "label": "Guitar",
+      "group": "Tools",
+      "include": true
+    },
+    {
+      "id": 341,
+      "name": "Binoculars",
+      "label": "Binoculars",
+      "group": "Tools",
+      "include": true
+    },
+    {
+      "id": 346,
+      "name": "ShotgunRail",
+      "label": "Shotgun Rail",
+      "group": "Tools",
+      "include": true
+    },
+    {
+      "id": 351,
+      "name": "GrabBag",
+      "label": "Grab Bag",
+      "group": "Tools",
+      "include": true
+    },
+    {
+      "id": 353,
+      "name": "StunGun",
+      "label": "Stun Gun",
+      "group": "Tools",
+      "include": true
+    },
+    {
+      "id": 354,
+      "name": "NightVisionGoggles",
+      "label": "Night Vision Goggles",
+      "group": "Tools",
+      "include": true
+    },
+    {
+      "id": 355,
+      "name": "CompactPistol",
+      "label": "Compact Pistol",
+      "group": "Tools",
+      "include": true
+    },
+    {
+      "id": 356,
+      "name": "ModernAxe",
+      "label": "Modern Axe",
+      "group": "Tools",
+      "include": true
+    },
+    {
+      "id": 358,
+      "name": "ShotgunPumpAction",
+      "label": "Shotgun Pump Action",
+      "group": "Tools",
+      "include": true
+    },
+    {
+      "id": 359,
+      "name": "Machete2",
+      "label": "Machete2",
+      "group": "Tools",
+      "include": true
+    },
+    {
+      "id": 360,
+      "name": "TacticalBow",
+      "label": "Tactical Bow",
+      "group": "Tools",
+      "include": true
+    },
+    {
+      "id": 361,
+      "name": "Rifle",
+      "label": "Rifle",
+      "group": "Tools",
+      "include": true
+    },
+    {
+      "id": 362,
+      "name": "I9mmAmmo",
+      "label": "9mm Ammo",
+      "group": "Ammo",
+      "include": true
+    },
+    {
+      "id": 363,
+      "name": "SlugAmmo",
+      "label": "Slug Ammo",
+      "group": "Ammo",
+      "include": true
+    },
+    {
+      "id": 364,
+      "name": "BuckshotAmmo",
+      "label": "Buckshot Ammo",
+      "group": "Ammo",
+      "include": true
+    },
+    {
+      "id": 365,
+      "name": "Crossbow",
+      "label": "Crossbow",
+      "group": "Tools",
+      "include": true
+    },
+    {
+      "id": 367,
+      "name": "Katana",
+      "label": "Katana",
+      "group": "Tools",
+      "include": true
+    },
+    {
+      "id": 368,
+      "name": "CrossbowAmmoBolt",
+      "label": "Crossbow Ammo Bolt",
+      "group": "Ammo",
+      "include": true
+    },
+    {
+      "id": 369,
+      "name": "StunGunAmmo",
+      "label": "Stun Gun Ammo",
+      "group": "Ammo",
+      "include": true
+    },
+    {
+      "id": 370,
+      "name": "PistolAmmoBox",
+      "label": "Pistol Ammo Box",
+      "group": "Ammo",
+      "include": true
+    },
+    {
+      "id": 371,
+      "name": "ShotgunAmmoBoxBuckshot",
+      "label": "Shotgun Ammo Box Buckshot",
+      "group": "Ammo",
+      "include": true
+    },
+    {
+      "id": 372,
+      "name": "ShotgunAmmoBoxSlug",
+      "label": "Shotgun Ammo Box Slug",
+      "group": "Ammo",
+      "include": true
+    },
+    {
+      "id": 373,
+      "name": "TacticalBowAmmo",
+      "label": "Tactical Bow Ammo",
+      "group": "Ammo",
+      "include": true
+    },
+    {
+      "id": 374,
+      "name": "PistolSuppressor",
+      "label": "Pistol Suppressor",
+      "group": "Tools",
+      "include": true
+    },
+    {
+      "id": 375,
+      "name": "LaserSightMod",
+      "label": "Laser Sight Mod",
+      "group": "Tools",
+      "include": true
+    },
+    {
+      "id": 376,
+      "name": "CompactPistolRail",
+      "label": "Compact Pistol Rail",
+      "group": "Tools",
+      "include": true
+    },
+    {
+      "id": 378,
+      "name": "FlashlightMod",
+      "label": "Flashlight Mod",
+      "group": "Tools",
+      "include": true
+    },
+    {
+      "id": 379,
+      "name": "TacticalAxe",
+      "label": "Tactical Axe",
+      "group": "Tools",
+      "include": true
+    },
+    {
+      "id": 380,
+      "name": "CombatKnife",
+      "label": "Combat Knife",
+      "group": "Tools",
+      "include": true
+    },
+    {
+      "id": 381,
+      "name": "Grenade",
+      "label": "Grenade",
+      "group": "Ammo",
+      "include": true
+    },
+    {
+      "id": 382,
+      "name": "GrenadeAmmo",
+      "label": "Grenade Ammo",
+      "group": "Ammo",
+      "include": true
+    },
+    {
+      "id": 383,
+      "name": "RifleRailMod",
+      "label": "Rifle Rail Mod",
+      "group": "Tools",
+      "include": true
+    },
+    {
+      "id": 386,
+      "name": "Revolver",
+      "label": "Revolver",
+      "group": "Tools",
+      "include": true
+    },
+    {
+      "id": 387,
+      "name": "RifleAmmo",
+      "label": "Rifle Ammo",
+      "group": "Ammo",
+      "include": true
+    },
+    {
+      "id": 388,
+      "name": "Molotov",
+      "label": "Molotov",
+      "group": "Ammo",
+      "include": true
+    },
+    {
+      "id": 389,
+      "name": "MolotovAmmo",
+      "label": "Molotov Ammo",
+      "group": "Ammo",
+      "include": true
+    },
+    {
+      "id": 390,
+      "name": "I3dPrinterResin",
+      "label": "3D Printer Resin",
+      "group": "Resources",
+      "include": true
+    },
+    {
+      "id": 391,
+      "name": "RedMask",
+      "label": "Red Mask",
+      "group": "Tools",
+      "include": true
+    },
+    {
+      "id": 392,
+      "name": "Stick",
+      "label": "Stick",
+      "group": "Resources",
+      "include": true
+    },
+    {
+      "id": 393,
+      "name": "Rock",
+      "label": "Rock",
+      "group": "Resources",
+      "include": true
+    },
+    {
+      "id": 394,
+      "name": "TacticalChainsaw",
+      "label": "Tactical Chainsaw",
+      "group": "Tools",
+      "include": true
+    },
+    {
+      "id": 395,
+      "name": "LogPlank",
+      "label": "Log Plank",
+      "group": "Resources",
+      "include": true
+    },
+    {
+      "id": 396,
+      "name": "TaserStick",
+      "label": "Taser Stick",
+      "group": "Tools",
+      "include": true
+    },
+    {
+      "id": 397,
+      "name": "ShiitakeMushroom",
+      "label": "Shiitake Mushroom",
+      "group": "Food",
+      "include": true
+    },
+    {
+      "id": 398,
+      "name": "KingOysterMushroom",
+      "label": "King Oyster Mushroom",
+      "group": "Food",
+      "include": true
+    },
+    {
+      "id": 399,
+      "name": "HydnumRepandumMushroom",
+      "label": "Hydnum Repandum Mushroom",
+      "group": "Food",
+      "include": true
+    },
+    {
+      "id": 400,
+      "name": "FlyAmanitaMushroom",
+      "label": "Fly Amanita Mushroom",
+      "group": "Food",
+      "include": true
+    },
+    {
+      "id": 401,
+      "name": "TurtleEgg",
+      "label": "Turtle Egg",
+      "group": "Food",
+      "include": true
+    },
+    {
+      "id": 402,
+      "name": "Backpack",
+      "label": "Backpack",
+      "group": "Tools",
+      "include": true
+    },
+    {
+      "id": 403,
+      "name": "Rope",
+      "label": "Rope",
+      "group": "Resources",
+      "include": true
+    },
+    {
+      "id": 405,
+      "name": "Bone",
+      "label": "Bone",
+      "group": "Resources",
+      "include": true
+    },
+    {
+      "id": 406,
+      "name": "QuarterLog",
+      "label": "Quarter Log",
+      "group": "Resources",
+      "include": true
+    },
+    {
+      "id": 408,
+      "name": "HalfLog",
+      "label": "Half Log",
+      "group": "Resources",
+      "include": true
+    },
+    {
+      "id": 409,
+      "name": "ThreeQuarterLog",
+      "label": "Three Quarter Log",
+      "group": "Resources",
+      "include": true
+    },
+    {
+      "id": 410,
+      "name": "Wristwatch",
+      "label": "Wristwatch",
+      "group": "Tools",
+      "include": true
+    },
+    {
+      "id": 412,
+      "name": "GPSTracker",
+      "label": "GPS Tracker",
+      "group": "Tools",
+      "include": true
+    },
+    {
+      "id": 413,
+      "name": "PlasmaLighter",
+      "label": "Plasma Lighter",
+      "group": "Tools",
+      "include": true
+    },
+    {
+      "id": 414,
+      "name": "VodkaBottle",
+      "label": "Vodka Bottle",
+      "group": "Food",
+      "include": true
+    },
+    {
+      "id": 415,
+      "name": "Cloth",
+      "label": "Cloth",
+      "group": "Resources",
+      "include": true
+    },
+    {
+      "id": 416,
+      "name": "CircuitBoard",
+      "label": "Circuit Board",
+      "group": "Resources",
+      "include": true
+    },
+    {
+      "id": 417,
+      "name": "TimeBomb",
+      "label": "Time Bomb",
+      "group": "Ammo",
+      "include": true
+    },
+    {
+      "id": 418,
+      "name": "Wire",
+      "label": "Wire",
+      "group": "Resources",
+      "include": true
+    },
+    {
+      "id": 419,
+      "name": "DuctTape",
+      "label": "Duct Tape",
+      "group": "Resources",
+      "include": true
+    },
+    {
+      "id": 420,
+      "name": "C4Brick",
+      "label": "C4 Brick",
+      "group": "Resources",
+      "include": true
+    },
+    {
+      "id": 421,
+      "name": "RamenNoodles",
+      "label": "Ramen Noodles",
+      "group": "Food",
+      "include": true
+    },
+    {
+      "id": 422,
+      "name": "RepairTool",
+      "label": "Repair Tool",
+      "group": "Tools",
+      "include": true
+    },
+    {
+      "id": 423,
+      "name": "NovelA",
+      "label": "Novel A",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 424,
+      "name": "NovelB",
+      "label": "Novel B",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 425,
+      "name": "CerealBox",
+      "label": "Cereal Box",
+      "group": "Food",
+      "include": true
+    },
+    {
+      "id": 426,
+      "name": "I3dPrintedFlask",
+      "label": "3D Printed Flask",
+      "group": "Tools",
+      "include": true
+    },
+    {
+      "id": 428,
+      "name": "I3dPrintedSled",
+      "label": "3D Printed Sled",
+      "group": "Tools",
+      "include": true
+    },
+    {
+      "id": 430,
+      "name": "Skull",
+      "label": "Skull",
+      "group": "Resources",
+      "include": true
+    },
+    {
+      "id": 431,
+      "name": "FireAxe",
+      "label": "Fire Axe",
+      "group": "Tools",
+      "include": true
+    },
+    {
+      "id": 432,
+      "name": "CanOpener",
+      "label": "Can Opener",
+      "group": "Tools",
+      "include": true
+    },
+    {
+      "id": 433,
+      "name": "Meat",
+      "label": "Meat",
+      "group": "Food",
+      "include": true
+    },
+    {
+      "id": 434,
+      "name": "CannedFood",
+      "label": "Canned Food",
+      "group": "Food",
+      "include": true
+    },
+    {
+      "id": 435,
+      "name": "GoldMask",
+      "label": "Gold Mask",
+      "group": "Tools",
+      "include": true
+    },
+    {
+      "id": 436,
+      "name": "Fish",
+      "label": "Fish",
+      "group": "Food",
+      "include": true
+    },
+    {
+      "id": 437,
+      "name": "Pills",
+      "label": "Pills",
+      "group": "Food",
+      "include": true
+    },
+    {
+      "id": 438,
+      "name": "MrePack",
+      "label": "MRE Pack",
+      "group": "Food",
+      "include": true
+    },
+    {
+      "id": 439,
+      "name": "EnergyDrink",
+      "label": "Energy Drink",
+      "group": "Food",
+      "include": true
+    },
+    {
+      "id": 440,
+      "name": "Flare",
+      "label": "Flare",
+      "group": "Ammo",
+      "include": true
+    },
+    {
+      "id": 441,
+      "name": "EnergyBar",
+      "label": "Energy Bar",
+      "group": "Food",
+      "include": true
+    },
+    {
+      "id": 443,
+      "name": "CraftedBow",
+      "label": "Crafted Bow",
+      "group": "Tools",
+      "include": true
+    },
+    {
+      "id": 444,
+      "name": "Rebreather",
+      "label": "Rebreather",
+      "group": "Tools",
+      "include": true
+    },
+    {
+      "id": 445,
+      "name": "Blueberries",
+      "label": "Blueberries",
+      "group": "Food",
+      "include": true
+    },
+    {
+      "id": 446,
+      "name": "Twinberries",
+      "label": "Twinberries",
+      "group": "Food",
+      "include": true
+    },
+    {
+      "id": 447,
+      "name": "Salmonberries",
+      "label": "Salmonberries",
+      "group": "Food",
+      "include": true
+    },
+    {
+      "id": 448,
+      "name": "Snowberries",
+      "label": "Snowberries",
+      "group": "Food",
+      "include": true
+    },
+    {
+      "id": 449,
+      "name": "DevilsClub",
+      "label": "Devils Club",
+      "group": "Food",
+      "include": true
+    },
+    {
+      "id": 450,
+      "name": "Horsetail",
+      "label": "Horsetail",
+      "group": "Food",
+      "include": true
+    },
+    {
+      "id": 451,
+      "name": "AloeVera",
+      "label": "Aloe Vera",
+      "group": "Food",
+      "include": true
+    },
+    {
+      "id": 452,
+      "name": "Yarro",
+      "label": "Yarro",
+      "group": "Food",
+      "include": true
+    },
+    {
+      "id": 453,
+      "name": "Fireweed",
+      "label": "Fireweed",
+      "group": "Food",
+      "include": true
+    },
+    {
+      "id": 454,
+      "name": "ArrowleafBalsamroot",
+      "label": "Arrowleaf Balsamroot",
+      "group": "Ammo",
+      "include": true
+    },
+    {
+      "id": 455,
+      "name": "HealthMix",
+      "label": "Health Mix",
+      "group": "Food",
+      "include": true
+    },
+    {
+      "id": 456,
+      "name": "HealthMixPlus",
+      "label": "Health Mix Plus",
+      "group": "Food",
+      "include": true
+    },
+    {
+      "id": 457,
+      "name": "StunGunAmmoBox",
+      "label": "Stun Gun Ammo Box",
+      "group": "Ammo",
+      "include": true
+    },
+    {
+      "id": 459,
+      "name": "Slingshot",
+      "label": "Slingshot",
+      "group": "Tools",
+      "include": true
+    },
+    {
+      "id": 461,
+      "name": "EnergyMix",
+      "label": "Energy Mix",
+      "group": "Food",
+      "include": true
+    },
+    {
+      "id": 462,
+      "name": "EnergyMixPlus",
+      "label": "Energy Mix Plus",
+      "group": "Food",
+      "include": true
+    },
+    {
+      "id": 464,
+      "name": "CatFood",
+      "label": "Cat Food",
+      "group": "Food",
+      "include": true
+    },
+    {
+      "id": 465,
+      "name": "Chicory",
+      "label": "Chicory",
+      "group": "Food",
+      "include": true
+    },
+    {
+      "id": 466,
+      "name": "Oyster",
+      "label": "Oyster",
+      "group": "Food",
+      "include": true
+    },
+    {
+      "id": 467,
+      "name": "AlbumCover",
+      "label": "Album Cover",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 468,
+      "name": "Cross",
+      "label": "Cross",
+      "group": "Resources",
+      "include": true
+    },
+    {
+      "id": 469,
+      "name": "AirCanister",
+      "label": "Air Canister",
+      "group": "Resources",
+      "include": true
+    },
+    {
+      "id": 471,
+      "name": "Flashlight",
+      "label": "Flashlight",
+      "group": "Tools",
+      "include": true
+    },
+    {
+      "id": 472,
+      "name": "DeerHide",
+      "label": "Deer Hide",
+      "group": "Resources",
+      "include": true
+    },
+    {
+      "id": 473,
+      "name": "LeafArmour",
+      "label": "Leaf Armour",
+      "group": "Tools",
+      "include": true
+    },
+    {
+      "id": 474,
+      "name": "CraftedSpear",
+      "label": "Crafted Spear",
+      "group": "Tools",
+      "include": true
+    },
+    {
+      "id": 476,
+      "name": "SmallRock",
+      "label": "Small Rock",
+      "group": "Resources",
+      "include": true
+    },
+    {
+      "id": 477,
+      "name": "CraftedClub",
+      "label": "Crafted Club",
+      "group": "Tools",
+      "include": true
+    },
+    {
+      "id": 479,
+      "name": "Feather",
+      "label": "Feather",
+      "group": "Resources",
+      "include": true
+    },
+    {
+      "id": 480,
+      "name": "SeveredArm",
+      "label": "Severed Arm",
+      "group": "Resources",
+      "include": true
+    },
+    {
+      "id": 481,
+      "name": "SeveredLeg",
+      "label": "Severed Leg",
+      "group": "Resources",
+      "include": true
+    },
+    {
+      "id": 482,
+      "name": "SeveredHead",
+      "label": "Severed Head",
+      "group": "Resources",
+      "include": true
+    },
+    {
+      "id": 483,
+      "name": "EmergencyPack",
+      "label": "Emergency Pack",
+      "group": "Tools",
+      "include": true
+    },
+    {
+      "id": 484,
+      "name": "Leaf",
+      "label": "Leaf",
+      "group": "Resources",
+      "include": true
+    },
+    {
+      "id": 485,
+      "name": "Shovel",
+      "label": "Shovel",
+      "group": "Tools",
+      "include": true
+    },
+    {
+      "id": 486,
+      "name": "WalkieTalkie",
+      "label": "Walkie Talkie",
+      "group": "Tools",
+      "include": true
+    },
+    {
+      "id": 487,
+      "name": "SilkPyjamas",
+      "label": "Silk Pyjamas",
+      "group": "Tools",
+      "include": true
+    },
+    {
+      "id": 489,
+      "name": "TacticalPants",
+      "label": "Tactical Pants",
+      "group": "Tools",
+      "include": true
+    },
+    {
+      "id": 490,
+      "name": "Hoodie",
+      "label": "Hoodie",
+      "group": "Tools",
+      "include": true
+    },
+    {
+      "id": 491,
+      "name": "OldJacket",
+      "label": "Old Jacket",
+      "group": "Tools",
+      "include": true
+    },
+    {
+      "id": 492,
+      "name": "Tuxedo",
+      "label": "Tuxedo",
+      "group": "Tools",
+      "include": true
+    },
+    {
+      "id": 493,
+      "name": "LeatherJacket",
+      "label": "Leather Jacket",
+      "group": "Tools",
+      "include": true
+    },
+    {
+      "id": 494,
+      "name": "BoneArmour",
+      "label": "Bone Armour",
+      "group": "Tools",
+      "include": true
+    },
+    {
+      "id": 495,
+      "name": "TacticalJacket",
+      "label": "Tactical Jacket",
+      "group": "Tools",
+      "include": true
+    },
+    {
+      "id": 496,
+      "name": "Money",
+      "label": "Money",
+      "group": "Resources",
+      "include": true
+    },
+    {
+      "id": 499,
+      "name": "Wetsuit",
+      "label": "Wetsuit",
+      "group": "Tools",
+      "include": true
+    },
+    {
+      "id": 500,
+      "name": "PuffyJacket",
+      "label": "Puffy Jacket",
+      "group": "Tools",
+      "include": true
+    },
+    {
+      "id": 501,
+      "name": "TacticalBoots",
+      "label": "Tactical Boots",
+      "group": "Tools",
+      "include": true
+    },
+    {
+      "id": 502,
+      "name": "Coins",
+      "label": "Coins",
+      "group": "Resources",
+      "include": true
+    },
+    {
+      "id": 503,
+      "name": "Torch",
+      "label": "Torch",
+      "group": "Tools",
+      "include": true
+    },
+    {
+      "id": 504,
+      "name": "Tarp",
+      "label": "Tarp",
+      "group": "Resources",
+      "include": true
+    },
+    {
+      "id": 506,
+      "name": "TurtleShell",
+      "label": "Turtle Shell",
+      "group": "Resources",
+      "include": true
+    },
+    {
+      "id": 507,
+      "name": "CraftedArrow",
+      "label": "Crafted Arrow",
+      "group": "Ammo",
+      "include": true
+    },
+    {
+      "id": 508,
+      "name": "LootPouch",
+      "label": "Loot Pouch",
+      "group": "Tools",
+      "include": true
+    },
+    {
+      "id": 509,
+      "name": "BunkerPamphlet",
+      "label": "Bunker Pamphlet",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 517,
+      "name": "CookingPot",
+      "label": "Cooking Pot",
+      "group": "Tools",
+      "include": true
+    },
+    {
+      "id": 518,
+      "name": "PaperTarget",
+      "label": "Paper Target",
+      "group": "Resources",
+      "include": true
+    },
+    {
+      "id": 519,
+      "name": "DeerHideArmour",
+      "label": "Deer Hide Armour",
+      "group": "Tools",
+      "include": true
+    },
+    {
+      "id": 520,
+      "name": "StructureElement",
+      "label": "Structure Element",
+      "group": "Resources",
+      "include": true
+    },
+    {
+      "id": 521,
+      "name": "EmailPrintoutCaveLighting",
+      "label": "Email Printout Cave Lighting",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 522,
+      "name": "RopeGun",
+      "label": "Rope Gun",
+      "group": "Tools",
+      "include": true
+    },
+    {
+      "id": 523,
+      "name": "ZiplineRope",
+      "label": "Zipline Rope",
+      "group": "Resources",
+      "include": true
+    },
+    {
+      "id": 524,
+      "name": "GolfBall",
+      "label": "Golf Ball",
+      "group": "Tools",
+      "include": true
+    },
+    {
+      "id": 525,
+      "name": "GolfPutter",
+      "label": "Golf Putter",
+      "group": "Tools",
+      "include": true
+    },
+    {
+      "id": 526,
+      "name": "EmailPrintoutMrPuffyWill",
+      "label": "Email Printout Mr Puffy Will",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 527,
+      "name": "Batteries",
+      "label": "Batteries",
+      "group": "Resources",
+      "include": true
+    },
+    {
+      "id": 528,
+      "name": "EmailPrintoutMrPuffyFinancial",
+      "label": "Email Printout Mr Puffy Financial",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 529,
+      "name": "GPSLocator",
+      "label": "GPS Locator",
+      "group": "Tools",
+      "include": true
+    },
+    {
+      "id": 530,
+      "name": "BlueprintDryingRack",
+      "label": "Blueprint Drying Rack",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 531,
+      "name": "BlueprintStickChair",
+      "label": "Blueprint Stick Chair",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 532,
+      "name": "BlueprintStickBed",
+      "label": "Blueprint Stick Bed",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 533,
+      "name": "BlueprintWeaponRack",
+      "label": "Blueprint Weapon Rack",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 534,
+      "name": "EmailPrintoutGolfA",
+      "label": "Email Printout Golf A",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 535,
+      "name": "EmailPrintoutGolfB",
+      "label": "Email Printout Golf B",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 536,
+      "name": "EmailPrintoutGolfC",
+      "label": "Email Printout Golf C",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 537,
+      "name": "EmailPrintoutGolfD",
+      "label": "Email Printout Golf D",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 538,
+      "name": "EmailPrintoutPaintingA",
+      "label": "Email Printout Painting A",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 539,
+      "name": "EmailPrintoutAstrologyA",
+      "label": "Email Printout Astrology A",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 540,
+      "name": "EmailPrintoutAstrologyB",
+      "label": "Email Printout Astrology B",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 541,
+      "name": "EmailPrintoutAstrologyC",
+      "label": "Email Printout Astrology C",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 542,
+      "name": "EmailPrintoutPoliticianA",
+      "label": "Email Printout Politician A",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 543,
+      "name": "EmailPrintoutPoliticianB",
+      "label": "Email Printout Politician B",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 544,
+      "name": "EmailPrintoutPoliticianC",
+      "label": "Email Printout Politician C",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 545,
+      "name": "EmailPrintoutBalletA",
+      "label": "Email Printout Ballet A",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 546,
+      "name": "EmailPrintoutSqueakyShoesA",
+      "label": "Email Printout Squeaky Shoes A",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 547,
+      "name": "EmailPrintoutSqueakyShoesB",
+      "label": "Email Printout Squeaky Shoes B",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 548,
+      "name": "EmailPrintoutSqueakyShoesC",
+      "label": "Email Printout Squeaky Shoes C",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 549,
+      "name": "BlueprintTrapBoneMaker",
+      "label": "Blueprint Trap Bone Maker",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 550,
+      "name": "BlueprintTrapFlySwatter",
+      "label": "Blueprint Trap Fly Swatter",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 551,
+      "name": "BlueprintTrapSmallAnimalCatcher",
+      "label": "Blueprint Trap Small Animal Catcher",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 552,
+      "name": "BlueprintBook",
+      "label": "Blueprint Book",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 553,
+      "name": "TechMesh",
+      "label": "Tech Mesh",
+      "group": "Resources",
+      "include": true
+    },
+    {
+      "id": 554,
+      "name": "TechArmour",
+      "label": "Tech Armour",
+      "group": "Tools",
+      "include": true
+    },
+    {
+      "id": 555,
+      "name": "VirginiaTrackSuit",
+      "label": "Virginia Track Suit",
+      "group": "Tools",
+      "include": true
+    },
+    {
+      "id": 556,
+      "name": "VirginiaDress",
+      "label": "Virginia Dress",
+      "group": "Tools",
+      "include": true
+    },
+    {
+      "id": 557,
+      "name": "VirginiaLeatherSuit",
+      "label": "Virginia Leather Suit",
+      "group": "Tools",
+      "include": true
+    },
+    {
+      "id": 558,
+      "name": "VirginiaCamoSuit",
+      "label": "Virginia Camo Suit",
+      "group": "Tools",
+      "include": true
+    },
+    {
+      "id": 560,
+      "name": "I3dPrintedGrapplingHook",
+      "label": "3D Printed Grappling Hook",
+      "group": "Resources",
+      "include": true
+    },
+    {
+      "id": 562,
+      "name": "HolovilleNoticeA",
+      "label": "Holoville Notice A",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 563,
+      "name": "HolovilleNoticeB",
+      "label": "Holoville Notice B",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 564,
+      "name": "HolovilleNoticeC",
+      "label": "Holoville Notice C",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 565,
+      "name": "HolovilleNoticeD",
+      "label": "Holoville Notice D",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 566,
+      "name": "KeyCardMaintenance",
+      "label": "Key Card Maintenance",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 567,
+      "name": "KeyCardGuest",
+      "label": "Key Card Guest",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 568,
+      "name": "KeyCardVIP",
+      "label": "Key Card VIP",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 569,
+      "name": "FoodCubeBrain",
+      "label": "Food Cube Brain",
+      "group": "Food",
+      "include": true
+    },
+    {
+      "id": 570,
+      "name": "FoodCubeSteak",
+      "label": "Food Cube Steak",
+      "group": "Food",
+      "include": true
+    },
+    {
+      "id": 571,
+      "name": "FoodCubeSteakAndBacon",
+      "label": "Food Cube Steak And Bacon",
+      "group": "Food",
+      "include": true
+    },
+    {
+      "id": 572,
+      "name": "GoldenArmour",
+      "label": "Golden Armour",
+      "group": "Tools",
+      "include": true
+    },
+    {
+      "id": 574,
+      "name": "NovelC",
+      "label": "Novel C",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 575,
+      "name": "NovelD",
+      "label": "Novel D",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 576,
+      "name": "QuarterLogPlank",
+      "label": "Quarter Log Plank",
+      "group": "Resources",
+      "include": true
+    },
+    {
+      "id": 577,
+      "name": "HalfLogPlank",
+      "label": "Half Log Plank",
+      "group": "Resources",
+      "include": true
+    },
+    {
+      "id": 578,
+      "name": "ThreeQuarterLogPlank",
+      "label": "Three Quarter Log Plank",
+      "group": "Resources",
+      "include": true
+    },
+    {
+      "id": 579,
+      "name": "BlueprintBoneChair",
+      "label": "Blueprint Bone Chair",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 580,
+      "name": "BlueprintStickLadder",
+      "label": "Blueprint Stick Ladder",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 581,
+      "name": "BlueprintBirdHouse",
+      "label": "Blueprint Bird House",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 582,
+      "name": "BlueprintFishTrap",
+      "label": "Blueprint Fish Trap",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 584,
+      "name": "BlueprintMannequin",
+      "label": "Blueprint Mannequin",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 585,
+      "name": "BlueprintScarecrow",
+      "label": "Blueprint Scarecrow",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 586,
+      "name": "BlueprintPlanterWall",
+      "label": "Blueprint Planter Wall",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 587,
+      "name": "BlueprintPlanterFloor",
+      "label": "Blueprint Planter Floor",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 588,
+      "name": "BlueprintBoneChandelier",
+      "label": "Blueprint Bone Chandelier",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 589,
+      "name": "TutorialBook",
+      "label": "Tutorial Book",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 590,
+      "name": "Radio",
+      "label": "Radio",
+      "group": "Tools",
+      "include": true
+    },
+    {
+      "id": 591,
+      "name": "BlueprintSmallLogCabin",
+      "label": "Blueprint Small Log Cabin",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 592,
+      "name": "CreepySkin",
+      "label": "Creepy Skin",
+      "group": "Resources",
+      "include": true
+    },
+    {
+      "id": 593,
+      "name": "CreepyArmour",
+      "label": "Creepy Armour",
+      "group": "Tools",
+      "include": true
+    },
+    {
+      "id": 594,
+      "name": "GuaranaBerries",
+      "label": "Guarana Berries",
+      "group": "Food",
+      "include": true
+    },
+    {
+      "id": 595,
+      "name": "Blackberries",
+      "label": "Blackberries",
+      "group": "Food",
+      "include": true
+    },
+    {
+      "id": 596,
+      "name": "AloeVeraSeed",
+      "label": "Aloe Vera Seed",
+      "group": "Food",
+      "include": true
+    },
+    {
+      "id": 597,
+      "name": "ArrowleafSeed",
+      "label": "Arrowleaf Seed",
+      "group": "Ammo",
+      "include": true
+    },
+    {
+      "id": 598,
+      "name": "BlackberrySeed",
+      "label": "Blackberry Seed",
+      "group": "Food",
+      "include": true
+    },
+    {
+      "id": 599,
+      "name": "BlueberrySeed",
+      "label": "Blueberry Seed",
+      "group": "Food",
+      "include": true
+    },
+    {
+      "id": 600,
+      "name": "DevilsClubSeed",
+      "label": "Devils Club Seed",
+      "group": "Food",
+      "include": true
+    },
+    {
+      "id": 601,
+      "name": "FireweedSeed",
+      "label": "Fireweed Seed",
+      "group": "Food",
+      "include": true
+    },
+    {
+      "id": 602,
+      "name": "GuaranaSeed",
+      "label": "Guarana Seed",
+      "group": "Food",
+      "include": true
+    },
+    {
+      "id": 603,
+      "name": "HorsetailSeed",
+      "label": "Horsetail Seed",
+      "group": "Food",
+      "include": true
+    },
+    {
+      "id": 604,
+      "name": "SalmonberrySeed",
+      "label": "Salmonberry Seed",
+      "group": "Food",
+      "include": true
+    },
+    {
+      "id": 605,
+      "name": "ChicorySeed",
+      "label": "Chicory Seed",
+      "group": "Food",
+      "include": true
+    },
+    {
+      "id": 606,
+      "name": "YarroSeed",
+      "label": "Yarro Seed",
+      "group": "Food",
+      "include": true
+    },
+    {
+      "id": 607,
+      "name": "BlueprintStorageRocks",
+      "label": "Blueprint Storage Rocks",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 608,
+      "name": "BlueprintStorageBones",
+      "label": "Blueprint Storage Bones",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 609,
+      "name": "BlueprintStorageLogs",
+      "label": "Blueprint Storage Logs",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 610,
+      "name": "BlueprintStorageSticks",
+      "label": "Blueprint Storage Sticks",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 611,
+      "name": "NumbersPrintout",
+      "label": "Numbers Printout",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 612,
+      "name": "NewspaperCutout",
+      "label": "Newspaper Cutout",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 613,
+      "name": "NewspaperCutoutOutbid",
+      "label": "Newspaper Cutout Outbid",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 614,
+      "name": "EmailPrintoutGovernmentA",
+      "label": "Email Printout Government A",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 615,
+      "name": "EmailPrintoutGovernmentB",
+      "label": "Email Printout Government B",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 616,
+      "name": "EmailPrintoutGovernmentC",
+      "label": "Email Printout Government C",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 617,
+      "name": "StockPricePrintout",
+      "label": "Stock Price Printout",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 618,
+      "name": "I3dPrintedArrow",
+      "label": "3D Printed Arrow",
+      "group": "Ammo",
+      "include": true
+    },
+    {
+      "id": 619,
+      "name": "VirginiaSwimSuit",
+      "label": "Virginia Swim Suit",
+      "group": "Tools",
+      "include": true
+    },
+    {
+      "id": 620,
+      "name": "BlueprintTable",
+      "label": "Blueprint Table",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 621,
+      "name": "BlueprintShelf",
+      "label": "Blueprint Shelf",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 622,
+      "name": "BlueprintRockPath",
+      "label": "Blueprint Rock Path",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 623,
+      "name": "BlueprintWallShelf",
+      "label": "Blueprint Wall Shelf",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 624,
+      "name": "BlueprintWallTorch",
+      "label": "Blueprint Wall Torch",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 625,
+      "name": "BlueprintHangingSkullLight",
+      "label": "Blueprint Hanging Skull Light",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 626,
+      "name": "HangGlider",
+      "label": "Hang Glider",
+      "group": "Tools",
+      "include": true
+    },
+    {
+      "id": 627,
+      "name": "MrPufftonTableCard",
+      "label": "Mr Puffton Table Card",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 628,
+      "name": "MrsPufftonTableCard",
+      "label": "Mrs Puffton Table Card",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 629,
+      "name": "BlueprintRainCatcher",
+      "label": "Blueprint Rain Catcher",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 630,
+      "name": "KnightV",
+      "label": "Knight V",
+      "group": "Tools",
+      "include": true
+    },
+    {
+      "id": 631,
+      "name": "NovelF",
+      "label": "Novel F",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 632,
+      "name": "BlueprintSpringTrap",
+      "label": "Blueprint Spring Trap",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 633,
+      "name": "CultPamphlet",
+      "label": "Cult Pamphlet",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 634,
+      "name": "SolarPanel",
+      "label": "Solar Panel",
+      "group": "Resources",
+      "include": true
+    },
+    {
+      "id": 635,
+      "name": "LightBulb",
+      "label": "Light Bulb",
+      "group": "Resources",
+      "include": true
+    },
+    {
+      "id": 636,
+      "name": "TemplateD",
+      "label": "Template D",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 637,
+      "name": "ActionCamera",
+      "label": "Action Camera",
+      "group": "Tools",
+      "include": true
+    },
+    {
+      "id": 638,
+      "name": "BlueprintBasicLogSled",
+      "label": "Blueprint Basic Log Sled",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 639,
+      "name": "SpaceSuit",
+      "label": "Space Suit",
+      "group": "Tools",
+      "include": true
+    },
+    {
+      "id": 640,
+      "name": "Stone",
+      "label": "Stone",
+      "group": "Resources",
+      "include": true
+    },
+    {
+      "id": 641,
+      "name": "BlueprintStoneFireplace",
+      "label": "Blueprint Stone Fireplace",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 642,
+      "name": "DuckHead",
+      "label": "Duck Head",
+      "group": "Resources",
+      "include": true
+    },
+    {
+      "id": 643,
+      "name": "EagleHead",
+      "label": "Eagle Head",
+      "group": "Resources",
+      "include": true
+    },
+    {
+      "id": 644,
+      "name": "SmallTurtleHead",
+      "label": "Small Turtle Head",
+      "group": "Resources",
+      "include": true
+    },
+    {
+      "id": 645,
+      "name": "BlueprintHeadTrophyMount",
+      "label": "Blueprint Head Trophy Mount",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 646,
+      "name": "RabbitHead",
+      "label": "Rabbit Head",
+      "group": "Resources",
+      "include": true
+    },
+    {
+      "id": 647,
+      "name": "SquirrelHead",
+      "label": "Squirrel Head",
+      "group": "Resources",
+      "include": true
+    },
+    {
+      "id": 648,
+      "name": "SeagullHead",
+      "label": "Seagull Head",
+      "group": "Resources",
+      "include": true
+    },
+    {
+      "id": 649,
+      "name": "BlueprintStorageStones",
+      "label": "Blueprint Storage Stones",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 650,
+      "name": "TurtleHead",
+      "label": "Turtle Head",
+      "group": "Resources",
+      "include": true
+    },
+    {
+      "id": 651,
+      "name": "DeerHead",
+      "label": "Deer Head",
+      "group": "Resources",
+      "include": true
+    },
+    {
+      "id": 652,
+      "name": "MooseHead",
+      "label": "Moose Head",
+      "group": "Resources",
+      "include": true
+    },
+    {
+      "id": 653,
+      "name": "PersonalNoteA",
+      "label": "Personal Note A",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 654,
+      "name": "PersonalNoteB",
+      "label": "Personal Note B",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 655,
+      "name": "PersonalNoteC",
+      "label": "Personal Note C",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 656,
+      "name": "BlueprintMaceTrap",
+      "label": "Blueprint Mace Trap",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 657,
+      "name": "I3dPrintedGpsLocatorCase",
+      "label": "3D Printed GPS Locator Case",
+      "group": "Tools",
+      "include": true
+    },
+    {
+      "id": 658,
+      "name": "BlueprintRadioTrap",
+      "label": "Blueprint Radio Trap",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 659,
+      "name": "BlueprintRadio",
+      "label": "Blueprint Radio",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 661,
+      "name": "GolfCartBattery",
+      "label": "Golf Cart Battery",
+      "group": "Tools",
+      "include": true
+    },
+    {
+      "id": 662,
+      "name": "ArtifactPieceA",
+      "label": "Artifact Piece A",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 663,
+      "name": "Pickaxe",
+      "label": "Pickaxe",
+      "group": "Tools",
+      "include": true
+    },
+    {
+      "id": 664,
+      "name": "SolafiteOre",
+      "label": "Solafite Ore",
+      "group": "Resources",
+      "include": true
+    },
+    {
+      "id": 665,
+      "name": "BlueprintItemPlating",
+      "label": "Blueprint Item Plating",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 666,
+      "name": "BlueprintPoweredCross",
+      "label": "Blueprint Powered Cross",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 667,
+      "name": "ArtifactPieceB",
+      "label": "Artifact Piece B",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 668,
+      "name": "ArtifactPieceC",
+      "label": "Artifact Piece C",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 669,
+      "name": "ArtifactPieceD",
+      "label": "Artifact Piece D",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 670,
+      "name": "BlueprintGoreChair",
+      "label": "Blueprint Gore Chair",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 671,
+      "name": "BlueprintGoreCouch",
+      "label": "Blueprint Gore Couch",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 672,
+      "name": "BlueprintUberTrap",
+      "label": "Blueprint Uber Trap",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 673,
+      "name": "BlueprintTableRound",
+      "label": "Blueprint Table Round",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 674,
+      "name": "OldNoteA",
+      "label": "Old Note A",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 675,
+      "name": "OldNoteB",
+      "label": "Old Note B",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 676,
+      "name": "OldNoteC",
+      "label": "Old Note C",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 677,
+      "name": "FishingEmailA",
+      "label": "Fishing Email A",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 678,
+      "name": "FishingEmailB",
+      "label": "Fishing Email B",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 679,
+      "name": "BlueprintGrindTrap",
+      "label": "Blueprint Grind Trap",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 680,
+      "name": "BlueprintSpotlight",
+      "label": "Blueprint Spotlight",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 681,
+      "name": "BlueprintClock",
+      "label": "Blueprint Clock",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 682,
+      "name": "BlueprintSpinTrap",
+      "label": "Blueprint Spin Trap",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 683,
+      "name": "BlueprintDoubleBed",
+      "label": "Blueprint Double Bed",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 684,
+      "name": "OldNoteE",
+      "label": "Old Note E",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 685,
+      "name": "OldNoteD",
+      "label": "Old Note D",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 686,
+      "name": "CultSignF",
+      "label": "Cult Sign F",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 687,
+      "name": "PufftonEmailA",
+      "label": "Puffton Email A",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 688,
+      "name": "BlueprintSpearThrowerTrap",
+      "label": "Blueprint Spear Thrower Trap",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 689,
+      "name": "ArtifactPieceE",
+      "label": "Artifact Piece E",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 690,
+      "name": "StoryPages",
+      "label": "Story Pages",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 691,
+      "name": "OldNoteF",
+      "label": "Old Note F",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 692,
+      "name": "FishingEmailC",
+      "label": "Fishing Email C",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 693,
+      "name": "BunkerMapA",
+      "label": "Bunker Map A",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 694,
+      "name": "JianyuEmailPrintoutA",
+      "label": "Jianyu Email Printout A",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 695,
+      "name": "CultSignG",
+      "label": "Cult Sign G",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 696,
+      "name": "CultSignH",
+      "label": "Cult Sign H",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 697,
+      "name": "CultSignI",
+      "label": "Cult Sign I",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 698,
+      "name": "CultSignJ",
+      "label": "Cult Sign J",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 699,
+      "name": "CultSignK",
+      "label": "Cult Sign K",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 700,
+      "name": "BlueprintStorageSpears",
+      "label": "Blueprint Storage Spears",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 701,
+      "name": "BlueprintLegLamp",
+      "label": "Blueprint Leg Lamp",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 702,
+      "name": "BlueprintStorageFirewood",
+      "label": "Blueprint Storage Firewood",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 703,
+      "name": "PriestOutfit",
+      "label": "Priest Outfit",
+      "group": "Tools",
+      "include": true
+    },
+    {
+      "id": 704,
+      "name": "BlueprintWeaponRackWall",
+      "label": "Blueprint Weapon Rack Wall",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 705,
+      "name": "CircusPamphlet",
+      "label": "Circus Pamphlet",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 706,
+      "name": "NewspaperDCutout",
+      "label": "Newspaper D Cutout",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 707,
+      "name": "Artifact",
+      "label": "Artifact",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 708,
+      "name": "ArtifactPieceF",
+      "label": "Artifact Piece F",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 709,
+      "name": "BlueprintTeleporter",
+      "label": "Blueprint Teleporter",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 710,
+      "name": "BlueprintRepelShrine",
+      "label": "Blueprint Repel Shrine",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 711,
+      "name": "BlueprintAttractShrine",
+      "label": "Blueprint Attract Shrine",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 712,
+      "name": "ArtifactPieceG",
+      "label": "Artifact Piece G",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 713,
+      "name": "BlueprintPlaterCounter",
+      "label": "Blueprint Plater Counter",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 714,
+      "name": "BlueprintGoldArmorPlater",
+      "label": "Blueprint Gold Armor Plater",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 715,
+      "name": "RaccoonHead",
+      "label": "Raccoon Head",
+      "group": "Resources",
+      "include": true
+    },
+    {
+      "id": 716,
+      "name": "BiblePaperD",
+      "label": "Bible Paper D",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 717,
+      "name": "OldNoteG",
+      "label": "Old Note G",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 718,
+      "name": "PersonalNoteE",
+      "label": "Personal Note E",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 719,
+      "name": "PersonalNoteF",
+      "label": "Personal Note F",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 720,
+      "name": "PersonalNoteG",
+      "label": "Personal Note G",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 721,
+      "name": "BiblePaperScrapA",
+      "label": "Bible Paper Scrap A",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 722,
+      "name": "PufftonEmailB",
+      "label": "Puffton Email B",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 723,
+      "name": "PufftonEmailC",
+      "label": "Puffton Email C",
+      "group": "Story",
+      "include": false
+    },
+    {
+      "id": 724,
+      "name": "TwinberrySeed",
+      "label": "Twinberry Seed",
+      "group": "Food",
+      "include": true
+    },
+    {
+      "id": 725,
+      "name": "SnowberrySeed",
+      "label": "Snowberry Seed",
+      "group": "Food",
+      "include": true
+    },
+    {
+      "id": 726,
+      "name": "BlueprintHangGliderLauncher",
+      "label": "Blueprint Hang Glider Launcher",
+      "group": "Story",
+      "include": false
+    }
+  ]
+}
